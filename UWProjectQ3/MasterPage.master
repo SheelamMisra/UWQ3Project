@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+   <link rel = "stylesheet" type = "text/css" href = "myStyleSheet.css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Learning Paths</title>
+  <asp:ContentPlaceHolder id="head" runat="server">
+		
+	<script type="text/javascript">
+		
+	</script> 
+  </asp:ContentPlaceHolder>
+</head>
+<body class="w3-black">
+    <form id="form1" runat="server">
+    	<div class="w3-container w3-centered w3-bar-block w3-black" style="padding-left:120px">
+		
+		</div>  
+		
+		<div class="w3-container w3-black" style="padding-left:0; padding-right:0">	
+			<img class="bgTile"  src="Image/HomeTile.png">
+			<h3 class="w3-bar-block w3-black w3-padding-small w3-animate-right">Limitless learning, limitless possibilities</h3>
+		</div>
+		
+		
+    <div class="container-fluid">
+        <div class="col-sm-3 col-md-6 col-lg-2">
+		<nav class="w3-container w3-black w3-card-2">
+			<ul>
+			<li><asp:Button id="btnHome" Name="btnHome" CssClass="w3-button" Text="Home" runat="server" OnClick="btnHome_Click"></asp:Button>
+			<li><asp:Button id="btnLogin" Name="btnLogin" CssClass="w3-button" Text="Login" runat="server" OnClick="btnLogin_Click"></asp:Button>
+			<li><asp:Button id="btnNewLogin" Name="btnNewLogin" CssClass="w3-button" Text="New Login" runat="server" OnClick="btnNewLogin_Click"></asp:Button>
+			<li><asp:Button id="btnAllClasses" Name="btnAllClasses" CssClass="w3-button" Text="All Classes" runat="server" OnClick="btnAllClasses_Click"></asp:Button>
+			<li><asp:Button ID="btnRegister" Name="btnRegister" CssClass="w3-button" Text="Class Registration" runat="server" OnClick="btnRegister_Click"/>
+			<li><asp:Button ID="btnMyClasses" CommandName="btnMyClasses" CssClass="w3-button" Text="My Classes" runat="server" OnClick="btnMyClasses_Click" />
+			</ul>	
+	    </nav>
+		</div>
+		<div class="col-sm-9 col-md-6 col-lg-10 w3-padding-32" >
+			<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+			</asp:ContentPlaceHolder>
+		<br/>
+		<br/>
+		
+		</div>
+		
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,108 @@
+﻿
+.box{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 1px solid #555;
+	border-radius: 15px;
+	background-color: darkgray;
+	align-content: center;
+	outline: none;}
+
+.box:focus {
+	align-content: center;
+	border-radius: 15px;
+	background-color: lightblue;
+}
+
+.backgroundBox {
+	background-color: lightgray;
+	padding: 35px 20px;
+	width: 500px;
+	height: 420px;
+	align-self: center;
+	border: ridge;
+	border-radius: 25px
+}
+
+.btn {
+	width: 180px;
+	padding: 6px 6px;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 8px 0;
+	align-self: center;
+	align-items: center;
+	box-sizing: border-box;
+	border-radius: 15px;
+	border: 2px solid #555;
+	outline: none;
+	background-color: #008CBA;
+	color: white;
+	cursor: crosshair;
+	border-radius: 15px;
+	align-content: center;
+}
+.txtBoxAlert {
+	font: bold 20px, arial;
+	font-weight: 100;
+	
+}
+.btndisabled {
+	width: 180px;
+	padding: 6px 6px;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 8px 0;
+	align-self: center;
+	align-items: center;
+	box-sizing: border-box;
+	border-radius: 15px;
+	border: 2px solid #555;
+	outline: none;
+	background-color: #d3d3d3;
+	color: black;
+	cursor: crosshair;
+	border-radius: 15px;
+	align-content: center;
+}
+.validationAlert {
+	color: red;	
+}
+.Grid {
+	background-color: #fff;
+	margin: 5px 0 10px 0;
+	padding: 6px 6px;
+	border: solid 1px #525252;
+	border-radius: 15px;
+	border-collapse: collapse;
+	font-family: Calibri;
+	color: #474747;
+}
+.Grid td {
+		padding: 2px;
+		border: solid 1px #c1c1c1;
+	}
+
+.Grid th {
+		padding: 4px 2px;
+		color: #fff;
+		background: #363670 ;
+		border-left: solid 1px #525252;
+		font-size: 0.9em;
+	}
+.bgTile {
+	/* Full height */
+	height: 50%;
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-size: cover;
+}
+.icon {
+	padding: 10px;
+	background: dodgerblue;
+	color: white;
+	min-width: 50px;
+	text-align: center;
+}
